@@ -11,6 +11,9 @@ compiler:
 matrix:
   exclude:
     - os: osx
+  #Adding Power
+    - os: osx
+  arch: ppc64le
   allow_failures:
     - os: osx
 
