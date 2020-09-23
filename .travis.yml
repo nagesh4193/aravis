@@ -1,7 +1,6 @@
 os:
   - linux
   - osx
-
 language: C
 
 compiler:
@@ -11,7 +10,12 @@ compiler:
 matrix:
   exclude:
     - os: osx
+    #Adding power
+    arch: ppc64le
+    - os: osx
   allow_failures:
+    - os: osx
+    arch: ppc64le
     - os: osx
 
 dist: xenial
